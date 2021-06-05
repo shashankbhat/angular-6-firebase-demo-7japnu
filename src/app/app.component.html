@@ -1,0 +1,19 @@
+<div class="container">
+  <p>Show all users</p>
+  <ul>
+    <li *ngFor="let item of items">
+      <p>Email id: <strong>{{item.email}}</strong></p>
+      <p>MobileNumber: <strong> {{item.mobileNumber}}</strong></p>
+      <p>Name: <strong> {{item.name}}</strong></p>
+      <br>
+    </li>
+  </ul>
+  Single user
+  <ul>
+    <li *ngIf="obj">
+      Email :{{obj.email}}
+      MobileNumber: {{obj.mobileNumber}}
+      Name: {{obj.name}}
+    </li>
+  </ul>
+</div>
